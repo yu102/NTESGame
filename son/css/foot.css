@@ -1,0 +1,147 @@
+.y-foot {
+    height: 336px;
+    background-color: #f6f7fb;
+}
+
+.y-foot-content {
+    width: 1230px;
+    height: 290px;
+    margin: 200px auto;
+    padding-top: 40px;
+    position: relative;
+}
+
+
+/* 第一个盒子 */
+
+.y-foot-content-one,
+.y-foot-content-two,
+.y-foot-content-three {
+    width: 152px;
+    height: 200px;
+    float: left;
+}
+
+.y-foot-content-four {
+    width: 756px;
+    height: 200px;
+    float: left;
+    margin-left: 15px;
+}
+
+
+/* 所有图标 */
+
+.y-foot-arrow {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url(../img/1.png) no-repeat 0 0;
+    padding-right: 14px;
+}
+
+
+/* 共同元素 */
+
+
+/* 标题 */
+
+.y-foot-content-p {
+    display: inline-block;
+    width: 152px;
+    height: 16px;
+    margin-bottom: 20px;
+}
+
+.y-foot-box:hover {
+    background-color: #cf1132;
+    cursor: pointer;
+}
+
+.y-foot-box:hover p,
+.y-foot-box:hover em {
+    color: #fff;
+    cursor: pointer;
+}
+
+.y-foot-box {
+    display: block;
+    width: 150px !important;
+    height: 80px !important;
+    background-color: #e3e3e3;
+    padding: 10px 0px;
+    margin: 0 2px 2px 0;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 30px;
+    transition: all 0.5s linear;
+}
+
+.y-foot-box p {
+    color: #222;
+}
+
+.y-foot-box em {
+    font-size: 12px;
+    color: #808080;
+}
+
+.y-foot-content-a {
+    width: 760px;
+    height: 162px;
+}
+
+.y-foot-content-a-1 {
+    width: 150px;
+    margin-right: 2px;
+    box-sizing: border-box;
+    float: left;
+}
+
+
+/* 底部 */
+
+.y-foot-content-buttom {
+    width: 1098px;
+    height: 22px;
+    position: absolute;
+    top: 280px;
+}
+
+.y-foot-content-buttom-left {
+    float: left;
+}
+
+.y-foot-content-buttom-left span {
+    color: #d9dde1;
+}
+
+.y-foot-content-buttom-left p {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.y-foot-content-buttom-left a {
+    font-size: 12px;
+    color: #888;
+}
+
+.y-foot-content-buttom-left a:hover {
+    color: #cf1132;
+}
+
+.y-foot-content-buttom-right {
+    float: right;
+}
+
+.y-foot-content-buttom-right span:nth-of-type(1) {
+    font-size: 14px;
+}
+
+.y-foot-content-buttom-right span:nth-of-type(2) {
+    color: #d9dde1;
+}
+
+.y-foot-content-buttom-right span:nth-of-type(3) {
+    font-size: 18px;
+}

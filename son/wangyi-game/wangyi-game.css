@@ -1,0 +1,346 @@
+/* 界面大盒子设置 */
+.wangyi-gamebox{        
+    width: 100%;
+}
+/* 界面中部盒子 */
+.game-center{
+    margin-top: 100px;
+    width: 100%;
+    height: 840px;
+}
+/* 界面中部盒子-顶部标题 */
+.center-top{
+    width: 100%;
+    height: 75px;
+    background: url(./image/head_bg_a7d5647.png);
+}
+.center-top span{
+    color: #fff;
+    width: 240px;
+    height: 75px;
+    border-bottom: 4px solid#E23A3F;
+    font-size: 40px;
+    margin-left: 325px; 
+    line-height: 75px;
+}
+/* 界面中部盒子-简介内容 */
+.center-content{
+    float: left;
+    width: 832px;
+    height: 800px;
+    margin-left: 325px;
+}
+.center-content p{
+    font-size: 14px;
+    color: #626262;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    line-height: 30px;
+}
+.center-content p:nth-of-type(1){
+    margin-top: 50px;
+}
+
+/* 界面底部盒子 */
+.game-bottom{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    height: 95px;
+    background: #272A2C;
+}
+/* 界面底部盒子-网易信息盒子 */
+.bottom-wangyiinfor{
+    margin-top: 20px;
+    margin-left: 448px;
+    width: 1024px;
+    height: 50px;
+}
+/* 界面底部盒子-网易信息盒子-左侧信息 */
+.wangyiinfor-left{
+    float: left;
+    width: 300px;
+    height: 50px;
+}
+/* 界面底部盒子-网易信息盒子-左侧信息-左图标 */
+.leftimg{
+    float: left;
+    width: 120px;
+    height: 36px;
+    background: url(./image/netease.1.png);
+}
+/* 界面底部盒子-网易信息盒子-左侧信息-右图标 */
+.rightimg{
+    float: left;
+    width: 150px;
+    height: 36px;
+    background: url(./image/nie.1.png);
+}
+/* 界面底部盒子-网易信息盒子-右侧信息*/
+.wangyiinfor-right{
+    float: left;
+    width: 600px;
+    height: 50px;
+}
+/* 界面底部盒子-网易信息盒子-右侧信息-其他信息 */
+.wangyiinfor-right p{
+    width: 600px;
+    height: 16px;
+    font-size: 12px;
+    color: #cccccc;
+}
+.m{
+    color: #E23A3F;
+    cursor: pointer;
+}
+.m:hover{
+    text-decoration: underline #E23A3F;
+}
+
+
+
+
+.head{
+    width: 100%;
+    background: rgba(255,255,255,.8);
+    z-index: 9999;
+    min-width: 1260px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.head-content{
+    width: 1260px;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+
+.head-logo{
+    width: 191px;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    left: -70px;
+}
+.head-logo img{
+    position: relative;
+    top: 25px;
+}
+.head-logo h1{
+    display: none;
+}
+
+.head-list{
+    position: relative;
+    height: 100px;
+    line-height: 100px;
+    color: #333;
+    /* margin-left: 100px; */
+}
+.head-list a{
+    position: relative;
+    vertical-align: sub;
+    margin: 0 17px;
+    font-size: 16px;
+    color: #818181;
+    height: 100px;
+    line-height: 100px;
+}
+.head-list a:hover{
+    color: #cf0f32;
+}
+
+
+
+
+.head-buttom{
+    position: relative;
+    margin-left: 30px
+    
+}
+.head-buttom .downbuttom{
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 120px;
+    height: 120px;
+    background: #cf1132;
+    z-index: 9999;
+}
+.head-buttom label:hover{
+    cursor: pointer;
+}
+.head-buttom-img{
+    background: url(./img/sprit.png) 0 0 no-repeat;
+    width: 34px;
+    height: 34px;
+    display: block;
+    position: relative;
+    left: 40px;
+    top: 35px;
+}
+.head-buttom-text{
+    position: relative;
+    left: 28px;
+    top: 40px;
+    color: #fff;
+    font-size: 15px;
+}
+#head-b-list:checked+label{
+    background-color: #282b2d;
+}
+#head-b-list:checked+label .head-buttom-img{
+    background: url(./img/sprit.png) -34px 0 no-repeat;
+    width: 34px;
+    height: 34px;
+    display: block;
+    position: relative;
+    left: 40px;
+    top: 35px;
+}
+#head-b-list:checked+label .head-buttom-text{
+    display: none;
+}
+#head-b-list:checked~div{
+    display: block;
+}
+
+
+
+
+
+
+.head-buttom-list{
+position: absolute;
+width: 1260px;
+padding-bottom: 60px;
+top: 100px;
+right: -123px;
+background: #282b2d;
+z-index: 10000;
+display: none;
+}
+.head-b-l-title{
+    margin: 40px 40px 25px;
+}
+.head-b-l-title h2{
+    font-size: 20px;
+    font-weight: normal;
+    display: inline-block;
+    color: #fff;
+}
+.head-b-l-title i{
+    font-style: normal;
+    float: right;
+    margin-left: 20px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #fff;
+}
+.haed-b-l-nav{
+    background-color: #35373a;
+}
+.head-b-l-nav-left{
+    display: inline-block;
+    padding: 17px 40px;
+    width: 401px;
+    border-right: 1px solid #454545;
+}
+.head-b-l-nav-left em{
+    color: #dd1136;
+    border-left: 4px solid #dd1136;
+    font-style: normal;
+    padding-left: 50px;
+}
+.head-b-l-nav-right{
+    display: inline-block;
+    padding: 17px 0px;
+}
+.head-b-l-nav-right em{
+    color: #dd1136;
+    border-left: 4px solid #dd1136;
+    font-style: normal;
+    padding-left: 50px;
+}
+.head-list-coulmn1{
+    width: 308px;
+    margin-right: -10px;
+}
+.head-buttom-list>div ul{
+    padding-top:25px;
+    float: left;
+}
+.head-buttom-list>div ul:nth-child(1){
+    padding-left: 36px;
+    border-left: 1px solid #454545;
+    box-sizing: border-box;
+}
+.head-buttom-list .head-list-coulmn1 ul{
+    border-left: none !important;
+}
+.head-buttom-list>div li{
+    width: 136px;
+    color: #c3c3c3;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.head-b-under{
+    position: relative;
+    top: 33px ;
+}
+.head-buttom-list>div ul h5{
+    font-size: 14px;
+    color: #6b6b6c;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-indent: 40px;
+    margin-left: -35px;
+}
+span.head-list-first{
+    margin: 0 5px;
+    background: url(./img/sprit.png) -68px 0px no-repeat;
+    width: 18px;
+    height: 9px;
+    display: inline-block;
+}
+span.head-list-red{
+    margin: 0 5px;
+    background: url(./img/sprit.png) -56px -48px no-repeat;
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+}
+span.head-list-green{
+    margin: 0 5px;
+    background: url(./img/sprit.png) -56px -34px no-repeat;
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+}
+.head-buttom-list li a:hover{
+    color: #fff;
+    font-weight: bold;
+}
+
+.head-upbuttom{
+    position: relative;
+    top: 800px;
+    left: 20px;
+}
+
+.head-buttom-img2{
+    background: url(./img/sprit.png) 7px -34px no-repeat;
+    width: 63px;
+    height: 14px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+

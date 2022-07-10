@@ -1,0 +1,164 @@
+/* 帮助反馈 */
+
+.cg-feedback {
+    display: none;
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+}
+
+.cg-feedback-cont {
+    z-index: 15;
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 600px;
+    height: 713px;
+    border-radius: 4px;
+    color: #fff !important;
+    background: #28333d;
+    color: #8b969f;
+}
+
+.cg-feedback-cont-th {
+    position: relative;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    border-radius: 4px 4px 0 0;
+    background: #1e2831;
+    font-size: 16px !important;
+}
+
+
+
+.cg-feedback-cont-th i {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 168px;
+    height: 120px;
+    background: url(../img/cg/cg-download/cg-feedback-1.png) 0 0/168px 120px;
+}
+
+.cg-feedback-cont-list {
+    box-sizing: border-box;
+    padding: 54px 54px 0 54px;
+    width: 100%;
+    height: 649px;
+    font-size: 14px !important;
+}
+
+.cg-feedback-cont-list h3 {
+    margin-bottom: 10px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.cg-feedback-cont-list ul li {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    color: #cfcccc;
+    border-bottom: 1px solid #2f3c47;
+}
+
+.cg-feedback-cont-list ul li a:hover {
+    color: #fff;
+}
+
+.cg-feedback-cont-list ul li a {
+    display: inline-block;
+    width: 448px;
+    height: 48px;
+}
+
+.cg-feedback-cont-list ul li i {
+    display: inline-block;
+    margin-left: 0px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    background: url(../img/cg/cg-download/cg-feedback-move.png) 0 0 /16px 16px;
+}
+
+.cg-feedback-cont-main-btn {
+    padding-top: 50px;
+    width: 492px;
+    height: 59px;
+    text-align: center;
+}
+
+.cg-feedback-cont-main-btn a:hover {
+    background: rgba(3, 196, 126, .2);
+}
+
+.cg-feedback-cont-main-btn p {
+    font-size: 14px;
+    color: #8b969f;
+    text-align: center
+}
+
+.cg-feedback-cont-main-btn a {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 16px;
+    padding: 0 32px;
+    width: 153px;
+    height: 36px;
+    font-size: 14px;
+    border: 1px solid #03c47e;
+    color: #03c47e;
+    font-weight: 700;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 20px;
+}
+
+.cg-feedback-cont-main-btn a i {
+    display: inline-block;
+    margin-left: 4px;
+    width: 22px;
+    height: 22px;
+    background: url(../img/cg/cg-download/cg-feedback-2.png) 0 0 / 22px 22px;
+    vertical-align: middle;
+}
+/* 打开帮助与反馈 */
+.cg-feedback-off {
+    /* display: none; */
+    z-index: 16;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+    width: 32px;
+    height: 32px;
+    background: url(../img/cg/cg-download/cg-feedback-x.png) no-repeat 0 0 /32px 32px;
+}
+input[type="radio"] {
+    display: none;
+}
+#cg-feedback-off:checked ~.cg-feedback {
+    display: none;
+}
+#cg-feedback-off:checked ~label{
+    display: none;
+}
+#cg-feedback-on:checked ~.cg-feedback {
+    display: block;
+}
+#cg-feedback-on:checked ~ .cg-feedback .cg-feedback-off {
+    display: block;
+}
+.cg-feedback-off:hover {
+    background: url(../img/cg/cg-download/cg-feedback-xx.png) no-repeat 0 0 /32px 32px;
+}

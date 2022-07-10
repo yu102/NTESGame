@@ -1,0 +1,701 @@
+body{
+    margin: 0;
+}
+/* 总盒子 */
+.recruitment-contain{
+    width: 100%;
+}
+/* 四块内容盒子的大小 */
+.recruitmentfirst,.recruitmentsecond,.recruitmentthird,.recruitmentfourth{
+    float: left;
+    width: 100%;
+    height: 960px;
+}
+/* 第一个盒子 */
+    /* 顶部 */
+        /* 顶部的大小 */
+.firsttop{
+    height: 60px;
+}
+        /* 信息栏 */
+.firsttop-information{
+    width: 1200px;
+    height: 50px;
+    margin: 10px auto 0;
+
+}
+.firsttop-information>div{
+    float: left;
+    margin-right: 50px;
+}
+            /* 网易logo */
+.wangyi-logo,.logo{
+    float: left;
+    width: 140px;
+    height: 50px;
+}
+            /* 其它选项 */
+.other{
+    /* float: left; */
+    margin-left: 40px;
+    width: 550px;
+    height: 50px;
+}
+.other ul{
+    width: 600px;
+    height: 70px;
+    line-height: 20px;
+
+}
+.other li{
+    float: left;
+    height: 50px;
+    margin-right: 50px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+            /* 对点击进行设置 */
+.other li:hover{
+    color: #E60012;
+    border-bottom: 4px solid #e60012;
+}
+            /* 登录和注册 */
+.login-register{
+    float: right;
+    margin-left: 190px;
+    width: 130px;
+    height: 30px;
+    margin-top: 10px;
+}
+.login,.register{
+    width: 58px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+}
+.login{
+    float: left;
+    background: #E60012;
+    color: #fff;
+    border: 1px solid #E60012;
+}
+.register{
+    float: left;
+    margin-left: 10px;
+    background: #fff;
+    color: #333333;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+
+
+            /* 改变页面背景 */
+.changebackground{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background: url(./gameimg/light.png);
+    float: right;
+    margin-top: 60px;
+}
+.changeurl:checked+div{
+    background: url(./gameimg/change-01.jpg);
+}
+        /* 中部 */
+        /* 中部的大小及背景 */
+.firstmain{
+    height: 900px;
+    background:url(./gameimg/01.jpg);
+}
+        /* 职位搜索 */
+.jobsearch{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+    width: 1000px;
+    height: 540px;
+}
+            /* 职位搜索标题 */
+.search-title{
+    text-align: center;
+    animation: run1 2s;
+}
+@keyframes run1{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(2);
+    }
+}
+.search-title h3{
+    color: #0A1331;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.search-title h1{
+    color: #ffffff;
+    font-size: 60px;
+}
+            /* 职位搜索栏盒子 */
+.search-box{
+    width: 1000px;
+    height: 240px;
+}
+            /* 职位搜索栏 */
+
+            /* 可以观察到的城市盒子 */
+.viewcity{
+    margin-left: 85px;
+    float: left;
+    width: 80px;
+    height: 50px;
+    overflow: hidden;
+}
+            /* 城市信息的大盒子 */
+.citybox{
+    width: 80px;
+    height: 275px;
+}
+.city{  
+    padding: 16px 0 16px 10px;
+    width: 70px;
+    height: 18px;
+    background: #ffffff;
+    font-size: 16px;
+}
+            /* 隐藏的城市盒子 */
+.hidecity{
+    top: 0;
+    width: 80px;
+    height: 225px;
+    background: #ffffff;
+}
+.hidecity ul{
+    margin-top: 0;
+    list-style: none;
+    padding: 0;
+}
+.hidecity li{
+    width: 72px;
+    height: 25px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;    
+}
+.hidecity li:hover{
+    background: #ddd;
+}
+input{
+    display: none;
+}
+input:checked+div{
+    overflow: visible;
+}
+            /* 可以看见的职位类别盒子 */
+.viewpost{
+    float: left;   
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+}
+            /* 职位类别大盒子 */
+.postbox{
+    width: 100px;
+    height: 275px;
+}
+            /* 职位类别盒子 */
+.positioncategory{
+    padding: 16px 0 16px 10px;
+    width: 90px;
+    height: 18px;
+    background: #ffffff;
+    font-size: 16px;
+}
+            /* 隐藏的职位类别盒子 */
+.hidepost{
+    width: 100px;
+    height: 225px;
+    background: #fff;
+}
+.hidepost ul{
+    margin-top: 0;
+    list-style: none;
+    padding: 0;
+}
+.hidepost li{
+    width: 98px;
+    height: 25px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;    
+}
+.hidepost li:hover{
+    background: #ddd;
+}
+
+            /* 搜索部分 */
+.search{
+    float: left;
+    width: 630px;
+    height: 50px;
+    background: #ffffff;
+}
+.searcha-key{
+    font-size: 16px;
+    padding-left: 10px;
+    width: 500px;
+    height: 44px;
+    border: none;
+    margin-top: 3px;
+    display: inline;
+}
+.bot{
+    float: right;
+    width: 110px;
+    height: 50px;
+    background: #e60012;
+    color: #fff;
+    font-size: 16px;
+    border: 1px #e60012;
+    cursor: pointer;
+}
+.arrowdown{
+    margin-left: 3px;
+    width: 15px;
+    height: 10px;
+    cursor: pointer;
+    display: inline-block;
+    background: url(./gameimg/downarrow.png);
+}
+.arrowdown:active{
+    background: url(./gameimg/uparrow.png);
+}
+
+            /* 热门搜索 */
+.hotsearch{
+    float: left;
+    width: 1000px;
+    font-size: 14px;
+    color: #0a1331;
+    text-align: center;
+}
+.hotsearch span{
+    width: 40px;
+    height: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.hotsearch span:hover{
+    text-decoration: underline;
+}
+
+            /* 下一页的按钮 */
+.bottom{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    left: 50%;
+    bottom: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    background:url(./gameimg/mouse.png) 27px -75px no-repeat;
+    cursor: pointer;
+}
+.bottom:hover{
+    background:url(./gameimg/mouse.png) 27px 25px no-repeat;
+}
+
+/* 第二个盒子 */
+.recruitmentsecond{
+    background: url(./gameimg/02-change.jpg);
+}
+.secondemain{
+    height: 960px;
+}
+/* 第三个盒子 */
+.recruitmentthird{
+    background: url(./gameimg/03-change.jpg);
+}
+/* 第四个盒子 */
+.recruitmentfourth{
+    background: url(./gameimg/04-change.jpg);
+}
+    /* 第二个盒子的信息栏 */
+@keyframes run2{
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes run3{
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.seconde-infor{
+    position: relative;
+    width: 1160px;
+    height: 400px;
+    left: 22%;
+    top: 25%;
+}
+.sec-topinfor{
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    width: 1160px;
+    height: 100px;
+    animation: run1 1s;
+}
+.sec-topinfor h3{
+    color: #0A1331;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.sec-topinfor h1{
+    color: #0A1331;
+    font-size: 42px;
+    font-weight: bold;
+    margin:0;
+}
+.sec-centerinfor{
+    float: left;
+    width: 1160px;
+    height: 300px;
+}
+.sec-content{
+    margin-top: 100px;
+    margin-left: 22px;
+    margin-right: 21px;
+    float: left;
+    width: 122px;
+    height: 166px;
+    cursor: pointer;
+    text-align: center;
+}
+.sec-content:nth-of-type(1),.sec-content:nth-of-type(2),.sec-content:nth-of-type(3){
+    animation: run2 1s;
+}
+.sec-content:nth-of-type(5),.sec-content:nth-of-type(6),.sec-content:nth-of-type(7){
+    animation: run3 1s;
+}
+.contente-1{
+    border-radius: 50%;
+    background: #42B8EA;
+}
+.contente-1:hover,.contente-2:hover,.contente-3:hover,.contente-4:hover,.contente-5:hover,.contente-6:hover,.contente-7:hover{
+    background: #E60012;
+}
+.contente-2{
+    border-radius: 50%;
+    background: #01C1B2;
+}
+.contente-3{
+    border-radius: 50%;
+    background: #505976;
+}
+
+.contente-4{
+    border-radius: 50%;
+    background: #00B7EE;
+}
+.contente-5{
+    border-radius: 50%;
+    background: #FF63BF;
+}
+.contente-6{
+    border-radius: 50%;
+    background: #42B8EA;
+}
+.contente-7{
+    border-radius: 50%;
+    background: #80C269;
+}
+
+.box{
+    position: relative;
+    top: 26px;
+    width: 122px;
+    height: 70px;
+}
+.contente-1 .box{
+    background: url(./gameimg/category_icon.png) 0 -276px no-repeat;
+}
+.contente-2 .box{
+    background: url(./gameimg/category_icon.png) 0 -352px no-repeat;
+}
+.contente-3 .box{
+    background: url(./gameimg/category_icon.png) 0 -424px no-repeat;
+}
+.contente-4 .box{
+    background: url(./gameimg/category_icon.png) 0 -494px no-repeat;
+}
+.contente-5 .box{
+    background: url(./gameimg/category_icon.png) 0 -575px no-repeat;
+}
+.contente-6 .box{
+    background: url(./gameimg/category_icon.png) 0 -196px no-repeat;
+}
+.contente-7 .box{
+    background: url(./gameimg/category_icon.png) 0 -661px no-repeat;
+}
+
+/* 第三个盒子的信息栏 */
+.thirdmain{
+    height: 960px;
+}
+.third-infor{
+    width: 1000px;
+    height: 500px;
+    margin-left: 450px;
+    margin-top: 230px;
+}
+@keyframes run4{
+    0%{
+        transform: rotateZ(0);
+    }
+    33%{
+        transform: rotateZ(-90deg);
+    }
+    66%{
+        transform: rotateZ(90deg);
+    }
+    100%{
+        transform: rotateZ(0);
+    }
+}
+.third-topinfor{
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+    animation: run4 1s;
+}
+.third-topinfor h3{
+    font-size: 16px;
+    color: #0A1331;
+}
+.third-topinfor h1{
+    font-size: 42px;
+    color: #0A1331;
+}
+.third-maininfor{
+    width: 1000px;
+    height: 440px;
+}
+.maininfor-left,.maininfor-right{
+    width: 500px;
+    height: 440px;
+}
+.maininfor-left{
+    float: left;
+}
+.maininfor-right{
+    float: right;
+}
+.maininfor-top{
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 480px;
+    height: 40px;
+    border-left: 4px solid #E60012;
+    font-size: 22px;
+    font-weight: bold;
+}
+.maininfor-top a{
+    width: 46px;
+    height: 26px;
+    border: 1px solid #333333;
+    font-size: 14px;
+    text-decoration: none;
+    color: #0A1331;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    float: right;
+}
+.maininfor-center{
+    margin-top: 50px;
+    width: 500px;
+    height: 240px;
+    overflow: hidden;
+}
+@keyframes runup{
+    0%{
+        transform: translateY(0);
+    }
+    15%{
+        transform: translateY(-40px);
+    }
+    30%{
+        transform: translateY(-80px);
+    }
+    45%{
+        transform: translateY(-120px);
+    }
+    60%{
+        transform: translateY(-160px);
+    }
+    75%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(-240px);
+    }
+}
+.infor-all{
+    width: 500px;
+    height: 480px;
+    animation: runup 10s infinite;
+}
+.inforall{
+    width: 500px;
+    height: 480px;
+    animation: runup 20s infinite;
+}
+.infor-one,.infor-two{
+    width: 500px;
+    height: 240px;
+}
+.positoin-infor{
+    width: 500px;
+    padding: 10px;
+    height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.positoin-infor:hover{
+    text-decoration: underline;
+}
+.time{
+    float: right;
+    margin-right: 20px;
+}
+
+/*第四个盒子的信息栏 */
+.fourth-infor{
+    width: 1000px;
+    height: 560px;
+    margin-left: 450px;
+    margin-top: 230px;
+}
+.fourth-topinfor{
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+}
+.fourth-topinfor h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #0A1331;
+}
+.fourth-topinfor h1{
+    font-size: 42px;
+    font-weight: bold;
+    color: #0A1331;
+}
+.fourth-centerinfor{
+    width: 1000px;
+    height: 460px;
+}
+.fourth-left{
+    margin-top: 50px;
+    float: left;
+    width: 704px;
+    height: 389px;
+    border: 8px solid #0A1331;
+}
+.fourth-right{
+    margin-top: 50px;
+    float: right;
+    padding: 20px 0 0 40px;
+    width: 240px;
+    height: 214px;
+    color: #0A1331;
+    font-size: 14px;
+}
+.fourth-right a{
+    float: right;
+    width: 88px;
+    height: 28px;
+    background: #E60012;
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+.return-top{
+    float: left;
+    height: 35px;   
+    width: 100%;
+    padding-top: 15px;
+    cursor: pointer;
+    text-align: center;
+    background: #e5e5e5;
+    border-right: 1px solid #0a1331;
+}
+.return-top a{
+    color: #3d3d39;
+    text-decoration: none;
+}
+.return-top a:hover{
+    text-decoration: underline;
+}
+.wangyi-bottom{
+    float: left;
+    width: 100%;
+    height: 120px;
+    background: #3d3d39;
+}
+.wangyi-foot{
+    width: 700px;
+    height: 100px;
+    margin-left: 610px;
+}
+.wangyi-logo2{
+    float: left;
+    margin-top: 39px;
+    width: 253px;
+    height: 31px;
+    background: url(./gameimg/wangyi-logo.png);
+}
+.wangyi-otherinfor{
+    float: left;
+    margin-top: 20px;
+    width: 410px;
+    height: 93px;
+    color: #afafaf;
+    font-size: 12px;
+}
+.wangyi-otherinfor a{
+    font-size: 12px;
+    color: #afafaf;
+    text-decoration: none;
+}
+.wangyi-otherinfor a:hover{
+    text-decoration: underline #E60012;
+    color: #E60012;
+}
+.colorchange:hover{
+    text-decoration: underline #E60012;
+    color: #E60012;
+}

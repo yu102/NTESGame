@@ -1,0 +1,284 @@
+.y-below {
+    height: 614px;
+    width: 1260px;
+    margin: 0 -310px;
+    padding: 0 310px;
+    background-color: #fff;
+}
+
+.y-content {
+    width: 1260px;
+    height: 300px;
+    margin: 0  auto 200px;
+
+}
+
+.y-content a:hover {
+    font-weight: 700;
+}
+
+
+/* 客户端和手游设置浮动 */
+
+.y-client {
+    width: 445px;
+    height: 456px;
+    float: left;
+    border-left: 1px solid rgba(1, 1, 1, .1);
+    border-right: 1px solid rgba(1, 1, 1, .1);
+    box-sizing: border-box;
+}
+
+.y-mobile {
+    width: 815px;
+    height: 458px;
+    float: left;
+    border-right: 1px solid rgba(1, 1, 1, .1);
+    box-sizing: border-box;
+}
+
+
+/* 导航栏设置浮动 */
+
+.y-client-cospaly {
+    width: 298px;
+    height: 367px;
+    float: left;
+    padding: 20px 0px 0px;
+    position: relative;
+}
+
+.y-client-sport {
+    width: 145px;
+    height: 339px;
+    float: left;
+    padding: 20px 0px 0px;
+    position: relative;
+    border-left: 1px solid rgba(1, 1, 1, .1);
+    box-sizing: border-box;
+}
+
+.y-mobile-hot {
+    width: 177px;
+    height: 480px;
+    float: left;
+    padding: 20px 0px 0px;
+    position: relative;
+}
+
+.y-mobile-new {
+    width: 600px;
+    height: 394px;
+    float: left;
+    padding: 20px 0px 0px;
+    position: relative;
+    border-left: 1px solid rgba(1, 1, 1, .1);
+    box-sizing: border-box;
+}
+
+
+/* 客户端,手游头部设置 */
+
+.y-client-head {
+    width: 445px;
+    height: 66px;
+    background-color: #fbfbfb;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+
+.y-mobile-head {
+    width: 815px;
+    height: 66px;
+    background-color: #fbfbfb;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+
+
+/* 客户端,手游标题设置 */
+
+.y-client-head h2,
+.y-mobile-head h2 {
+    border-left: 4px solid #dd1136;
+    padding-left: 32px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+
+/* 角色扮演样式 */
+
+.y-client-cosplay-one {
+    font-size: 14px;
+    font-weight: 700;
+    color: #c21d35;
+    text-indent: 38px;
+}
+
+.y-client-cosplay-two {
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    left: 38px;
+    top: 64px;
+    line-height: 28px;
+}
+
+.y-client-cosplay-three {
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    left: 168px;
+    top: 64px;
+    line-height: 28px;
+}
+
+
+/* 竞技休闲样式 */
+
+.y-client-sport-one {
+    font-size: 14px;
+    font-weight: 700;
+    color: #c21d35;
+    text-indent: 38px;
+}
+
+.y-client-sport-two {
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    position: absolute;
+    left: 38px;
+    top: 64px;
+}
+
+
+/* 热门推荐样式 */
+
+.y-mobile-hot-one {
+    font-size: 14px;
+    font-weight: 700;
+    color: #c21d35;
+    text-indent: 38px;
+}
+
+.y-mobile-hot-two {
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    position: absolute;
+    left: 38px;
+    top: 64px;
+}
+
+
+/* 新品推荐 */
+
+.y-mobile-new-one {
+    font-size: 14px;
+    font-weight: 700;
+    color: #c21d35;
+    text-indent: 38px;
+}
+
+.y-mobile-new-two {
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    position: absolute;
+    left: 38px;
+    top: 64px;
+}
+
+.y-mobile-new-three {
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    position: absolute;
+    left: 180px;
+    top: 64px;
+}
+
+.y-mobile-new-four {
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    position: absolute;
+    left: 326px;
+    top: 64px;
+}
+
+.y-mobile-new-five {
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    position: absolute;
+    left: 470px;
+    top: 64px;
+}
+
+
+/* 注释 */
+
+
+/* no1 */
+
+.y-client-cosplay-two .no1 {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background-image: url(../img/spirit.png);
+    background-repeat: no-repeat;
+    background-position: -68px 0px;
+}
+
+
+/* red */
+
+.y-content .red,
+.y-note .red {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/spirit.png) no-repeat -56px -47px;
+}
+
+
+/* green */
+
+.y-content .green,
+.y-note .green {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/spirit.png) no-repeat -56px -34px;
+}
+
+
+/* 查看更多 */
+
+.y-look {
+    width: 122px;
+    height: 36px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    margin: 20px auto;
+    color: #6d6d6d;
+    cursor: pointer;
+}
+
+.y-look:hover {
+    background-color: #dbdcdf;
+}
+
+
+/* 注释 */
+
+.y-note {
+    font-size: 12px;
+    color: #5a5a5a;
+    text-align: center;
+}

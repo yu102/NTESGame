@@ -1,0 +1,245 @@
+.hotgamecontain{
+    width: 1280px;
+    height: 810px;
+    margin: 0px;
+    background-color: #f6f7fb;
+}
+/* 热门游戏和新游测试的大盒子 */
+.hotgamemain{
+    width: 1260px;
+    height: 100%;
+}
+/* 热门游戏 */
+.hotgameleft{
+    float: left;
+    width: 960px;
+    height: 720px;
+    padding: 50px 0px 0px;
+}
+/* 热门游戏的标题 */
+.hotgametitle{
+    position: relative;
+    width: 960px;
+}
+.hotgametitle,.newgame-text{
+    line-height: 22px;
+    font-size: 22px;
+    color: #272a2c;
+    text-indent: 15px;
+    border-left: 4px #cf1132 solid;
+    margin-bottom: 30px;
+}
+/* 换一批 */
+.hotgamechange{
+    position: absolute;
+    margin-bottom: 30px;
+    top: 0px;
+    right: 20px;
+    font-size: 16px;
+    color: #272a2c;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    display: block;
+}
+input{
+    display: none;
+}
+/* 显示在页面上的内容 */
+.view-hotgame{
+    float: left;
+    width: 960px;
+    height: 676px;
+    overflow: hidden;
+}
+/* 装游戏的大盒子 */
+.hotgame-bigbox{
+    float: left;
+    width: 1920px;
+    height: 676px;
+    overflow: hidden;
+}
+/* 装游戏的第一个盒子 */
+.hotgame-box{
+    float: left;
+    top: 0;
+    left: 0;
+    width: 960px;
+    height: 676px;
+    overflow: hidden;
+}
+/* 装游戏的第二个盒子 */
+.hotgame-secondbox{
+    float: left;
+    width: 960px;
+    height: 676px;
+    top: 0;
+    left: 1920px;
+    overflow: hidden;
+}
+input:checked+div{
+    transform: translateX(-960px);
+}
+/* 存放每个游戏的盒子 */
+.gamebox{
+    float: left;
+    width: 300px;
+    height: 318px;
+    background-color: #fff;
+    margin: 0 20px 20px 0;  
+    position: relative;
+}
+
+/* 游戏图片盒子的大小 */
+.gamepicture-box{
+    position: relative;
+    width: 300px;
+    height: 170px;
+    overflow: hidden;
+}
+/* 图片格式及存储图片盒子的格式*/
+.gamepicture{
+    position: absolute;
+    width: 300px;
+    height: 170px;
+    cursor: pointer;
+}
+/* 隐藏的二维码 */
+.QR-code{
+    position: absolute;
+    width: 300px;
+    height: 170px;
+    top: -170px;
+    transition: all 0.5s ease-in;
+}
+/* 对game-picture进行：hover操作 */
+.gamepicture-box:hover .QR-code{
+    transform: translateY(170px);
+}
+
+/* 游戏名 */
+.gametitle{
+    color: #383838;
+    font: 700 20px/32px;
+    margin: 13px 20px 2px;
+    height: 32px;
+}
+/* 游戏介绍 */
+.game-introduction{
+    height: 45px;
+    margin: 0 16px 13px;
+    font: 14px "Microsoft YaHei";
+    color: #b1b1b1;
+    line-height: 22px;
+    padding: 0 2px;
+    position: relative;
+    border-bottom: 1px solid #b1b1b1;
+}
+/* 游戏官网 */
+.game-officialwebsite{
+    width: 270px;
+    height: 25px;
+    position: absolute;
+    bottom: 8px;
+    left: 9px;
+    right: 9px;
+}
+.ingameofficial{
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    width: 88px;
+    height: 30px;
+    font: 12px/30px "Micosoft YaHei";
+    color: #b1b1b1;
+    display: block;
+}
+/* 新游测试 */
+.hotgameright{
+    padding:50px 0;
+    height: 910px;
+    overflow: hidden;
+}
+/* 新游戏盒子的格式 */
+.newgame-box-ul{
+    border: solid 1px #ededed;
+    background-color: #fff;
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.newgame-box{
+    border-top: 1px solid #ededed;
+    position: relative;  
+    width: 298px;
+    height: 108px;  
+}  
+ /* 新游体验官招募  */
+ .newgame-Experience-Officer{
+    width: 298px;
+    height: 108px;
+    background: url(../图片-新游测试/体验官招募.png) 0 0 no-repeat;
+    display: block;
+    margin: 0 auto;
+ }
+ /* 新游戏盒子 */
+ .newgame-filetext{
+     display: block;
+     padding: 20px 42px 0 26px;
+     height: 88px;
+ }
+/* 新游戏图片 */
+.newgamepicture{
+    float: left;
+    width: 68px;
+    height: 68px;
+    margin-right: 22px;
+}
+/* 新游戏名字格式 */
+.newgame-name{
+    font-size: 16px;
+    color: #555;
+    line-height: 22px;
+    height: 22px;
+    font-style: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+/* 新游戏状态的盒子 */
+.newgame-state{
+    font-size: 14px;
+    color: #999;
+    line-height: 24px;
+    height: 24px;
+}
+/* 新游戏公测时间的盒子 */
+.newgame-time{
+    display: block;
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+    height: 24px;
+}
+/* 箭头 */
+.game-arrow{
+    position: absolute;
+    width: 15px;
+    height: 28px;
+    background: url(../图片-新游测试/arrow1.jpg);
+    top: 50%;
+    right: 20px;
+    margin-top: -14px;
+}
+.newgame-box:hover .game-arrow{
+    background: url(../图片-新游测试/arrow2.png);
+}
+/* 超链接格式 */
+a{  
+    text-decoration: none;
+    cursor: pointer;
+}

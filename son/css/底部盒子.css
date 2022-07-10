@@ -1,0 +1,89 @@
+/* µ×²¿ºÐ×Ó */
+.bottom-box{
+    background-color: #f6f7fb;
+}
+.bottom-box-content{
+    padding: 40px 0;
+    color: #888;
+    overflow: auto;
+    font-size: 16px;
+}
+.bottom-box-content>div{
+    width: 152px;
+    float: left;
+    position: relative;
+    margin-right: 14px;
+}
+
+.bottom-box-content p{
+    background: url(../img/bottom-box-li.png) 0 0 no-repeat;
+    text-indent: 30px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+.bottom-box-content a{
+    height: 60px;
+    position: relative;
+    float: left;
+    width: 150px;
+    padding: 15px 0;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background: #e3e3e3;
+    text-align: center;
+    text-decoration: none;
+}
+.bottom-box-content a em{
+    font-size: large;
+    color: #000;
+    
+}
+.bottom-box-content a span{
+    font-size: 12px;
+    line-height: 50px;
+}
+.bottom-box .bottom-box-content .bottomb-b4{
+    width: 760px;
+}
+.bottomb-b4 a{
+    float: left;
+}
+.bottom-box .bottom-box-content .bottom-bottom div{
+    background-image: none;
+    display: inline-block;
+    width: 1280px;
+}
+.bottom-bottom .bottom-b-content a{
+    width: auto;
+    height: auto;
+    padding: 0;
+    float: none;
+    background-color: #f6f7fb;
+    font-size: 12px;
+}
+.bottom-bottom .bottom-b-content span{
+    color: #000;
+}
+
+.bottom-b-content{
+    margin: 40px auto 0;
+}
+.bottom-bottom .bottom-b-phone{
+    float: right;
+    /* margin-right:; */
+} 
+.bottom-b-phone-num{
+    float: right;
+    margin-right: 200px;
+}
+.bottom-box-content>div>a:hover{
+    background-color: #cf1132;
+    color:#fff;
+}
+.bottom-box-content>div>a:hover em{
+    color: #fff;
+}
+.bottom-b-content a:hover{
+    color: #cf1132;
+}

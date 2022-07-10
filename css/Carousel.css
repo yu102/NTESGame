@@ -1,0 +1,292 @@
+/* 轮播区域 */
+
+/* 设置轮播盒子的高度和宽度 */
+.Carousel{
+    width: 100%;
+    height: 950px;
+    position: relative;
+}
+
+.Carousel div.banner{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.Carousel div.banner ul.banner_list{
+    display: flex;
+    height: 100%;
+    width: 9600px;
+    /* transition: all 2s linear; */
+    animation: run 20s steps(5,end) infinite;
+    /* position: absolute; */
+}
+.Carousel div.banner li{
+    width: 100%;
+    height: 100%;
+}
+.Carousel div.banner ul.banner_list li a{
+    display: block;
+    height: 100%;
+}
+
+@keyframes run {
+    0%{
+        margin-left: 0;
+        
+    }
+    100%{
+        margin-left: -9600px;
+    }
+}
+
+.Carousel div.banner li:nth-child(1) a{
+    background: url(../img/Carousel-01.jpg) no-repeat 0 0 /100%;
+}
+.Carousel div.banner li:nth-child(2) a{
+    background: url(../img/Carousel-02.jpg) no-repeat 0 0 /100%;
+}
+.Carousel div.banner li:nth-child(3) a{
+    background: url(../img/Carousel-03.jpg) no-repeat 0 0 /100%;
+}
+.Carousel div.banner li:nth-child(4) a{
+    background: url(../img/Carousel-04.png) no-repeat 0 0 /100%;
+}
+.Carousel div.banner li:nth-child(5) a{
+    background: url(../img/Carousel-05.jpg) no-repeat 0 0 /100%;
+}
+
+
+/* 设置左右按钮区域的样式 */
+.Carousel div.previous,
+.Carousel div.next{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    cursor: pointer;
+}
+
+.Carousel div.next{
+    right: 0;
+    flex-direction: row-reverse;
+}
+
+/* 设置左右按钮的样式 */
+.Carousel div.previous span.previous_btn,
+.Carousel div.next span.next_btn
+{
+    display: inline-block;
+    width: 45px ;
+    height: 80px;
+    background: #cf0f32;
+    position: relative;
+}
+
+.Carousel div.previous:hover span.previous_btn,
+.Carousel div.next:hover span.next_btn{
+    background: #3c3d3f;
+}
+
+.Carousel div.previous span.previous_btn i,
+.Carousel div.next span.next_btn i{
+    display: block;
+    width: 8px;
+    height: 13px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.Carousel div.previous span.previous_btn i{
+    background: url(../img/Carousel-previous.png) no-repeat;
+}
+.Carousel div.next span.next_btn i{
+    background: url(../img/Carousel-next.png) no-repeat;
+}
+
+/* 设置 左右按钮区域文本内容的样式*/
+.Carousel div.previous div.previous_content,
+.Carousel div.next div.next_content{
+    width: 230px;
+    height: 60px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    background: #3c3d3f;
+    text-align: center;
+    display: none;
+}
+.Carousel div.previous div.previous_content{
+    border-left: 1px solid #767878;
+}
+
+.Carousel div.next div.next_content{
+    border-right: 1px solid #767878;
+}
+
+.Carousel div.previous div.previous_content div,
+.Carousel div.next div.next_content div{
+    margin-left: 5px;
+    display: inline-block;
+    height: 60px;
+}
+
+.Carousel div.next div.next_content div:nth-child(2) p:nth-child(1),
+.Carousel div.previous div.previous_content p:nth-child(1){
+    font-size: 20px;
+}
+
+.Carousel div.next div.next_content div:nth-child(2) p:nth-child(2),
+.Carousel div.previous div.previous_content p:nth-child(2){
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.Carousel div.previous div.previous_content div a,
+.Carousel div.next div.next_content div a{
+    display: block;
+    width: 80px;
+    height: 60px;
+    background: url(../img/Carousel-01.jpg) no-repeat 0 0/170%; 
+}
+
+.Carousel div.previous:hover div.previous_content,
+.Carousel div.next:hover div.next_content{
+    display: flex;
+}
+
+
+/* 小圆点样式 */
+.Carousel .banner .Dot{
+    width: 1260px;
+    height: 20px;
+    display: flex;
+    
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-60%);
+}
+.Carousel .banner .Dot li{
+    width: 20px;
+    height: 20px;
+}
+.Carousel .banner .Dot li{
+    margin-left: 10px;
+}
+.Carousel .banner .Dot li label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background:url(../img/dot.png) no-repeat -38px 0px;
+    box-shadow: 1 1 5px #ccc;
+}
+
+.Carousel .banner input{
+    display: none;
+}
+
+/* 设置input选中时圆的样式 */
+.Carousel .banner input:nth-child(1):checked ~ .Dot li:nth-child(1) label{
+    background: url(../img/dot.png) no-repeat 0px -37px;
+}
+.Carousel .banner input:nth-child(1):checked ~ .Dot li:nth-child(1) label{
+    background: url(../img/dot.png) no-repeat 0px -37px;
+}
+.Carousel .banner input:nth-child(2):checked ~ .Dot li:nth-child(2) label{
+    background: url(../img/dot.png) no-repeat 0px -37px;
+}
+.Carousel .banner input:nth-child(3):checked ~ .Dot li:nth-child(3) label{
+    background: url(../img/dot.png) no-repeat 0px -37px;
+}
+.Carousel .banner input:nth-child(4):checked ~ .Dot li:nth-child(4) label{
+    background: url(../img/dot.png) no-repeat 0px -37px;
+}
+.Carousel .banner input:nth-child(5):checked ~ .Dot li:nth-child(5) label{
+    background: url(../img/dot.png) no-repeat 0px -37px;
+}
+div.Carousel div.banner input:nth-child(1):checked ~ ul.banner_list{
+    margin-left: 0;
+}
+.Carousel .banner input:nth-child(2):checked ~ ul.banner_list{
+    margin-left: -1920px;
+}
+.Carousel .banner input:nth-child(3):checked ~ ul.banner_list{
+    margin-left: -3840px;
+}
+.Carousel .banner input:nth-child(4):checked ~ ul.banner_list{
+    margin-left: -5760px;
+}
+.Carousel .banner input:nth-child(5):checked ~ ul.banner_list{
+    margin-left: -7680px;
+}
+
+
+
+
+/* 广告部分 */
+div.advertisement{
+    width: 100%;
+    height: 210px;
+}
+div.advertisement div.advertisement_content{
+    width: 1260px;
+    height: 100%;
+    margin: auto;
+}
+div.advertisement div.advertisement_content ul.advertisement_content_list{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+div.advertisement div.advertisement_content ul.advertisement_content_list li:nth-child(2) a img{
+    width: 300px;
+    height: 130px;
+}
+
+div.advertisement div.advertisement_content ul.advertisement_content_list li a{
+    position: relative;
+    display: block;
+}
+div.advertisement div.advertisement_content ul.advertisement_content_list li a:hover span{
+    width: 40px;
+}
+div.advertisement div.advertisement_content ul.advertisement_content_list li a:hover img{
+    animation: imgop 0.7s ease-in;
+}
+
+@keyframes imgop{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+div.advertisement div.advertisement_content ul.advertisement_content_list li a span{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #Ea4040;
+    position: absolute;
+    top: 19px;
+    left: 16px;
+    transition: width  0.5s ease-in-out;
+}
+
+div.advertisement div.advertisement_content ul.advertisement_content_list li a span.active{
+    background: #EDCBAE;
+}
+
+

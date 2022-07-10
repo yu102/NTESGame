@@ -1,0 +1,575 @@
+/* 头部....... */
+
+.gm-header {
+    width: 100%;
+    height: 80px;
+    background-color: #fbfbfb;
+}
+
+.gm-head {
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 17px;
+    width: 1100px;
+    height: 63px;
+}
+
+.gm-head-logo-1 a {
+    float: left;
+    width: 140px;
+    height: 46px;
+    background: url(../img/gm/head-logo-1.png) no-repeat;
+}
+
+.gm-head-logo-2 a {
+    float: left;
+    width: 140px;
+    height: 46px;
+    background: url(../img/gm/head-logo-2.png) no-repeat 50%;
+}
+/* 登录按钮 */
+.gm-head-logo-btn {
+    margin-top: 5px;
+    float: right;
+    width: 102px;
+    height: 36px;
+    border-radius: 17px;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #37b0e8;
+}
+.gm-head-logo-btn:hover {
+    text-decoration: underline;
+}
+.gm-head-logo-btn a {
+    display: block;
+    width: 102px;
+    height: 36px;
+}
+.gm-head-login {
+    display: none;
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+}
+.gm-head-login-main {
+    z-index: 15;
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 420px;
+    height: 419px;
+    border-radius: 4px;
+    background: #fff;
+}
+.gm-head-login-main-th {
+    position: relative;
+    margin: 30px 0;
+    width: 420px;
+    height: 60px;
+}
+.gm-head-login-off {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    transition: all .5s;
+    background: url(../img/gm/gm-all.png) no-repeat -103px -90px;
+}
+.gm-head-login-off:hover {
+    transform: rotate(180deg);
+}
+.gm-head-login-main-th h3 {
+    float: left;
+    width: 420px;
+    height: 59px;
+    line-height: 59px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: solid 1px #f53e3a;
+}
+.gm-head-login-main-bottom {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 50px;
+    width: 420px;
+    height: 260px;
+}
+.gm-head-login-main-bottom>i:nth-of-type(1) {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    display: block;
+    width: 22px;
+    height: 24px;
+    background: url(../img/gm/gm-all.png) no-repeat -249px -88px;
+}
+.gm-head-login-main-bottom>i:nth-of-type(2) {
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    display: block;
+    width: 22px;
+    height: 24px;
+    background: url(../img/gm/gm-all.png) no-repeat -290px -88px;
+}
+.gm-head-login-main-bottom input {
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    padding: 0 40px;
+    width: 318px;
+    height: 44px;
+    font-size: 16px;
+    border: 1px solid #c5cddb;
+}
+.gm-head-login-main-bottom input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+.gm-head-login-main-bottom input:focus {
+    border-color: #37b0e8;
+}
+.gm-head-login-error {
+    width: 320px;
+    height: 37px;
+}
+.gm-head-login-error i {
+    float: left;
+    margin: 3px 3px 0 0;
+    width: 18px;
+    height: 15px;
+    background: url(../img/gm/gm-all.png) no-repeat -215px -34px;
+}
+.gm-head-login-error span {
+    float: left;
+    width: 298px;
+    height: 40px;
+    color: #fa5b5b;
+    font-size: 12px;
+    line-height: 20px;
+}
+.gm-head-login-error span a {
+    color: #4aafe9;
+}
+.gm-head-login-main-bottom input[type="submit"] {
+    background: #2d85be;
+    color: #fff;
+    font-size: 18px;
+}
+.gm-head-login-main-bottom input[type="submit"]:hover {
+    background: #3f96cf;
+    cursor: pointer;
+}
+.gm-head-login-end {
+    width: 320px;
+    height: 27px;
+    font-size: 12px;
+    color: #999;
+}
+.gm-head-login-end a:nth-child(1) {
+    float: left;
+}
+.gm-head-login-end a:nth-child(2) {
+    float: right;
+}
+.gm-head-login-end a:hover {
+    color: #666;
+}
+/* 打开与关闭登录 */
+#gm-head-login-off:checked ~.gm-head-login {
+    display: none;
+}
+#gm-head-login-on:checked ~.gm-head-login {
+    display: block;
+}
+/* 长图片 */
+
+.gm-longpicture {
+    margin: auto;
+    width: 1920px;
+    height: 325px;
+    background: url(../img/gm/longpicture.png);
+}
+
+
+/* 内容主体, 游戏列表 */
+
+input[type="radio"] {
+    display: none;
+}
+
+.gm-content {
+    position: relative;
+    box-sizing: border-box;
+    margin: 20px auto;
+    width: 1100px;
+    height: 700px;
+    border: 1px solid #ededed;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.gm-content-list {
+    width: 1100px;
+    height: 45px;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.gm-content-list ul li label {
+    box-sizing: border-box;
+    float: left;
+    cursor: pointer;
+    width: 120px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    border-left: 1px solid #ebebeb;
+    text-align: center;
+    box-sizing: border-box;
+    color: #707070;
+}
+
+.gm-content-list ul li:first-of-type {
+    border-left: 0;
+}
+
+.gm-search {
+    float: right;
+    margin: 8px 10px 0 0;
+    width: 275px;
+    height: 28px;
+    font-size: 16px;
+    color: #707070;
+    line-height: 28px;
+}
+
+.gm-search-box {
+    float: right;
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 190px;
+    height: 28px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+}
+
+.gm-search-box input {
+    float: left;
+    width: 152px;
+    height: 26px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.gm-search-box i {
+    float: left;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background: url(../img/gm/gm-search-box-1.png) no-repeat 1px 1px;
+}
+
+.gm-search-box input::placeholder {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.gm-search-box input:focus+i {
+    background: url(../img/gm/gm-search-box-2.png) no-repeat 1px 1px;
+}
+
+
+/* 热门端游....... */
+
+.gm-hotgames {
+    box-sizing: border-box;
+    padding: 20px 30px;
+    width: 100%;
+    height: 650px;
+    background-color: #fff;
+}
+
+.hotcomputergames {
+    width: 100%;
+    height: 193px;
+}
+
+.hotcomputergames-th {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 16px;
+    border-left: 3px solid #37b0e8;
+}
+
+.hotcomputergames-th h3 {
+    padding-left: 11px;
+}
+
+.hotcomputergames-list ul li {
+    float: left;
+    margin-right: 34px;
+    width: 100px;
+    height: 158px;
+}
+
+.hotcomputergames-list ul li a {
+    box-sizing: border-box;
+    display: block;
+    padding: 14px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ebebeb;
+    border-radius: 16px;
+}
+
+.hotcomputergames-list ul li img {
+    width: 70px;
+    height: 70px;
+}
+
+.hotcomputergames-list ul li p {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+
+/* 热门手游 */
+
+.hotmobilegames {
+    width: 100%;
+    height: 351px;
+}
+
+.hotmobilegames-th {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 16px;
+    border-left: 3px solid #37b0e8;
+}
+
+.hotmobilegames-th h3 {
+    padding-left: 11px;
+}
+
+.hotmobilegames-list ul li {
+    float: left;
+    margin-right: 34px;
+    width: 100px;
+    height: 158px;
+}
+
+ul li:nth-of-type(8n) {
+    margin-right: 0;
+}
+
+.hotmobilegames-list ul li a {
+    box-sizing: border-box;
+    display: block;
+    padding: 14px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ebebeb;
+    border-radius: 16px;
+}
+
+.hotmobilegames-list ul li img {
+    width: 70px;
+    height: 70px;
+}
+
+.hotmobilegames-list ul li p {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+
+/* 更多游戏 */
+
+.hotgames-more {
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.hotgames-more-btn {
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #37b0e8;
+    border-radius: 5px;
+}
+
+
+/* 下部列表 */
+
+.gm-linklist {
+    margin: 33px auto;
+    width: 1100px;
+    height: 21px;
+}
+
+.gm-linklist ul {
+    text-align: center;
+}
+
+.gm-linklist ul li {
+    display: inline-block;
+    line-height: 1.2em;
+    border-left: 3px solid #37b0e8;
+    padding-left: 17px;
+    text-align: left;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.gm-linklist ul li a:hover {
+    text-decoration: underline;
+    color: #37b0e8;
+}
+
+
+/* 底部页脚 */
+
+.gm-footer {
+    box-sizing: border-box;
+    padding: 20px 0;
+    width: 100%;
+    height: 214px;
+    background-color: #272a2c;
+}
+
+.gm-footer-main {
+    margin: auto;
+    padding: 10px 0;
+    width: 840px;
+    height: 174px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #fff;
+}
+
+.gm-footer-main-top {
+    width: 100%;
+    height: 48px;
+}
+
+.gm-footer-main-top-left {
+    float: left;
+    width: 271px;
+}
+
+.gm-footer-main-top-right {
+    float: left;
+    width: 530px;
+}
+
+.gm-footer-main-top-right-a {
+    line-height: 20px;
+}
+
+.gm-footer-main a:hover {
+    text-decoration: underline;
+}
+
+.gm-footer-main-top-right-b {
+    position: relative;
+    line-height: 28px;
+}
+
+.gm-footer-main p {
+    line-height: 2;
+}
+
+.gm-footer-main-top-right-b a:last-of-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 3px;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    background-color: #610000;
+}
+
+
+/* 页面跳转...................................................... */
+
+.go-hotgames {
+    z-index: 0;
+    position: absolute;
+    top: 46px;
+    left: 0;
+}
+
+.go-computergames {
+    z-index: -1;
+    position: absolute;
+    top: 46px;
+    left: 0;
+}
+
+.go-computergames>.hotcomputergames,
+.go-mobilegames>.hotcomputergames {
+    height: 540px;
+}
+
+.go-mobilegames {
+    z-index: -1;
+    position: absolute;
+    top: 46px;
+    left: 0;
+}
+
+#go-hotgames:checked+.go-hotgames {
+    z-index: 10;
+}
+
+#go-hotgames:checked~label {
+    color: #37b0e8;
+    border-top: 3px solid #37b0e8;
+    background-color: #fff;
+}
+
+#go-computergames:checked+.go-computergames {
+    z-index: 10;
+}
+
+#go-computergames:checked~label {
+    color: #37b0e8;
+    border-top: 3px solid #37b0e8;
+    background-color: #fff;
+}
+
+#go-mobilegames:checked+.go-mobilegames {
+    z-index: 10;
+}
+
+#go-mobilegames:checked~label {
+    color: #37b0e8;
+    border-top: 3px solid #37b0e8;
+    background-color: #fff;
+}
